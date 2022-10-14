@@ -1,0 +1,25 @@
+<form [formGroup]="addForm" (ngSubmit)="handleSubmit()">
+    <div>
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" formControlName="title" />
+    </div>
+
+    <div>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" formControlName="author" />
+    </div>
+
+    <div>
+        <label for="isbn">ISBN:</label>
+        <input type="text" name="isbn" id="isbn" formControlName="isbn" />
+    </div>
+    
+    <div>
+        <label for="genre">Genre:</label>
+        <input type="text" name="genre" id="genre" formControlName="genre" />
+    </div>
+    
+    <div>
+        <input type="submit" name="submit" value="Submit" id="submit"/>
+    </div>   
+</form>
